@@ -1,7 +1,7 @@
-const audio = new Audio();
+let audio = new Audio();
 audio = document.querySelector(".audio");
-window.addEventListener("DOMContentLoaded", event => {
-    //const audio1 = document.querySelector(".audio");
-    audio.volume = 0.5;
-    audio.play();
-  });
+let button = document.querySelector(".btn");
+button.addEventListener('click', () => {
+  audio.volume = 0.5;
+  audio.play();
+})
