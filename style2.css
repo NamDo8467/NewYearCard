@@ -1,0 +1,81 @@
+body{
+  background-color: aqua;
+}
+.container .row .col1{
+    border: 2px solid black;
+    /* border-radius: 15%; */
+    background-color: red;
+    box-shadow:  -0.5vw 0.5vw  #262626;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    animation-name: moving1;
+    animation-fill-mode: forwards;
+    /* animation-name: background; */
+    animation-duration: 5s;
+   /* animation-iteration-count: infinite; */
+    
+}
+.container .row .col2{
+  /* border: 2px solid black; */
+  position: relative;
+  top:120px;
+  left:10px;
+ 
+}
+.container .row .col3{
+    border: 2px solid black;
+    /* border-radius: 15%; */
+    background-color: red;
+    box-shadow: 0.5vw 0.5vw #262626;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    animation-name: moving2;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+   
+    
+}
+.container .row p{
+  font-family: 'Dancing Script', cursive;
+  font-size: 3vw;
+}
+.container2{
+  
+  height: 400px;
+
+}
+.container2 button{
+  position: relative;
+  right:0.5vw;
+  top:3vw;
+}
+.container2 a{
+  text-decoration: none;
+
+}
+.container2 a:hover{
+  color:white;
+  font-weight: bold;
+  
+}
+
+/* @keyframes background {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  } */
+@keyframes moving1{
+    0%   {background-color:red; color:yellow;left:0px; top:0px;}
+  25%  {background-color:#b3ffb3; color:black; left:6%; top:0px;}
+  50%  {background-color:#ff99ff; color:white; left:6%; top: 150px;}
+  100%  {background-color:red; color:yellow; left:0; top:150px;}
+  
+}
+@keyframes moving2{
+    0%   {background-color:red; color:yellow;right:0px; top:0px;}
+  25%  {background-color:#b3ffb3; color:black; right:6%; top:0px;}
+  50%  {background-color:#ff99ff; color:white; right:6%; top:150px;}
+  100%  {background-color:red; color:yellow; right:-30px; top:150px;}
+  
+}
